@@ -18,6 +18,7 @@ class HomeView(BaseView):
                     "name": chat["title"],
                     "url": f"/{chat['alias_id']}",
                 }
+            
                 for _, chat in self.chat_ids.items()
             ],
             "authenticated": req.app["is_authenticated"],
